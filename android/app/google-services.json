@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "278424421464",
+    "project_id": "equipments-9fb00",
+    "storage_bucket": "equipments-9fb00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278424421464:android:6d7873d6438ee5a517b62d",
+        "android_client_info": {
+          "package_name": "com.example.reservation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278424421464-lg5s6n7i0l9gh2g3o7lopc4uduf3pbif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUMeg0EWsckf8ryYT_ovjwG2wDX_MsRTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278424421464-lg5s6n7i0l9gh2g3o7lopc4uduf3pbif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
