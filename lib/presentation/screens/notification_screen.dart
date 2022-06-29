@@ -11,9 +11,9 @@ class NotificationScreen extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: 1000,
+            height: 600,
             child: ListView.builder(
-              itemCount: 8,
+              itemCount: 5,
               itemBuilder: (context, index) {
                 return notificationListTileWidget(
                   title: 'التنبيه الأول',

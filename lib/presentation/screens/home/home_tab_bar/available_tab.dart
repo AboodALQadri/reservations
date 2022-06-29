@@ -74,7 +74,7 @@ class _AvailableTabState extends State<AvailableTab> {
               height: 600,
               child: StreamBuilder(
                 stream: FirebaseFirestore.instance
-                    .collection('equipments')
+                    .collection('equipments').where('booking_status' , isEqualTo: 'متاح')
                     .snapshots(),
                 builder: (context, snapshot) {
                   if (snapshot.hasData) {
@@ -99,7 +99,7 @@ class _AvailableTabState extends State<AvailableTab> {
                             // title: snapshot.data!.id.contains('name').toString(),
                             title: myData['name'],
                             subtitle: myData['supervisor_name'],
-                            stateText: myData['booking_status'].toString(),
+                            stateText: myData['booking_status'],
                             textBackGroundColor: MyColors.kPrimaryColor,
                             borderColor: MyColors.kPrimaryColor,
                           ),

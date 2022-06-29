@@ -22,7 +22,7 @@ class _AllReservationTabState extends State<AllReservationTab> {
             return Column(
               children: [
                 SizedBox(
-                  height: 800,
+                  height: 550,
                   child: ListView.separated(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     itemCount: snapshot.data!.docs.length,

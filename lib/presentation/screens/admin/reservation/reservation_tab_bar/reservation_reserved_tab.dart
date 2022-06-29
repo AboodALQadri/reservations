@@ -11,13 +11,13 @@ class ReservationReservedTab extends StatelessWidget {
     return SingleChildScrollView(
       child: StreamBuilder(
         stream:
-        FirebaseFirestore.instance.collection('reservations').snapshots(),
+        FirebaseFirestore.instance.collection('reservations').where('status' , isEqualTo: 'مقبولة').snapshots(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return Column(
               children: [
                 SizedBox(
-                  height: 800,
+                  height: 530,
                   child: ListView.separated(
                     padding: const EdgeInsets.symmetric(horizontal: 15),
                     itemCount: snapshot.data!.docs.length,

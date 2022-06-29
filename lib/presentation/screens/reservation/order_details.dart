@@ -64,7 +64,7 @@ class OrderDetails extends StatelessWidget {
                           Row(
                             children: [
                               containerWidget(
-                                  text: 'لابتوبات',
+                                  text: myData['category_name'],
                                   backgroundColor: MyColors.kPrimaryColor,
                                   colorText: Colors.white,
                                   borderColor: MyColors.kPrimaryColor),
@@ -72,7 +72,7 @@ class OrderDetails extends StatelessWidget {
                                 width: 15,
                               ),
                               containerWidget(
-                                text: 'متاح',
+                                text: myData['status'],
                                 backgroundColor: MyColors.kGreenColor,
                                 colorText: Colors.white,
                                 borderColor: MyColors.kGreenColor,

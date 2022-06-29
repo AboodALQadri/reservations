@@ -16,13 +16,13 @@ class _AcceptedTabState extends State<AcceptedTab> {
     return SingleChildScrollView(
       child: StreamBuilder(
         stream:
-            FirebaseFirestore.instance.collection('reservations').snapshots(),
+            FirebaseFirestore.instance.collection('reservations').where('status' , isEqualTo: 'مقبولة').snapshots(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return Column(
               children: [
                 SizedBox(
-                  height:800,
+                  height:550,
                   child: ListView.separated(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     itemCount: snapshot.data!.docs.length,

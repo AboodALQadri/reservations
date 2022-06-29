@@ -24,7 +24,7 @@ class _AllProductsTabState extends State<AllProductsTab> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 SizedBox(
-                  height: 800,
+                  height: 530,
                   child: ListView.separated(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     itemCount: snapshot.data!.docs.length,

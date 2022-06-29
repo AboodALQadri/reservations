@@ -74,7 +74,7 @@ class ReservationProductDetails extends StatelessWidget {
                     ],
                   ),
                   containerWidget(
-                    text: myData['status'].toString(),
+                    text: myData['status'],
                     colorText: Colors.white,
                     backgroundColor: MyColors.kGreenColor,
                     borderColor: MyColors.kGreenColor,

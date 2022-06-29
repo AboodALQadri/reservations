@@ -17,14 +17,14 @@ class _ProductsAvailableTabState extends State<ProductsAvailableTab> {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: StreamBuilder(
-        stream: FirebaseFirestore.instance.collection('equipments').snapshots(),
+        stream: FirebaseFirestore.instance.collection('equipments').where('booking_status' , isEqualTo: 'متاح').snapshots(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 SizedBox(
-                  height: 800,
+                  height: 530,
                   child: ListView.separated(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     itemCount: snapshot.data!.docs.length,

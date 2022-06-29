@@ -73,7 +73,7 @@ class ProductDetails extends StatelessWidget {
                                 Row(
                                   children: [
                                     containerWidget(
-                                        text: 'محجوزة',
+                                        text: myData['booking_status'],
                                         backgroundColor: MyColors.kGreenColor,
                                         colorText: Colors.white,
                                         borderColor: MyColors.kGreenColor),
@@ -81,7 +81,7 @@ class ProductDetails extends StatelessWidget {
                                       width: 15,
                                     ),
                                     containerWidget(
-                                      text: 'لابتوبات',
+                                      text: myData['category_name'],
                                       backgroundColor: MyColors.kPrimaryColor,
                                       colorText: Colors.white,
                                       borderColor: MyColors.kPrimaryColor,
